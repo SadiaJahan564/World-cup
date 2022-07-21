@@ -71,17 +71,25 @@ padding: 0%;
 }
 
 .sidebar{
-    background-color:black;
+    background-color:rgb(252, 249, 249);
   width:20%;
     padding: 0%;
     height:312px;
     border-radius: 10px;
-    font-size:70px;
+    font-size:50px;
     text-align: center;
     padding: 10px;
-    
+    }
+.sidebar a{
+    display: block;
+    font-size: 30px;
+    color:black;
+    padding: 10%;
+    text-decoration: none;
 
 }
+
+
 .blog{
     width:78%;
  display: grid;
@@ -94,8 +102,7 @@ input{
     padding: 10px;
 
 }
- /* .main-content{
-   /* grid-template-columns: auto auto auto; */
+
  .div1{
 
     
@@ -119,7 +126,6 @@ input{
 
 .footer{
     background-color: rgb(4, 4, 4);
-    grid-column: 1 / -1;
     text-align: center;
     color: white;
     padding: 20px;
@@ -146,7 +152,7 @@ input{
 
 
 /* for tablet screen */
-/* @media only screen and (max-width: 770px){
+ @media only screen and (max-width: 770px){
 .blog{
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
@@ -156,13 +162,13 @@ input{
 }
 .sidebar{
     display: flex;
-    height:100px;
     background: none;
+    height: 100%;
 }
-} */
+} 
 
 /* for mobile */
-/* @media only screen and (max-width: 320px){ 
+ @media only screen and (max-width: 350px){ 
     .blog{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
@@ -172,12 +178,19 @@ input{
     }
     .sidebar{
         display: flex;
-        flex-direction: row;
-        height:100px;
+        flex-direction: column;
         background: none;
+        height: 100%;
     }
     .header{
-        display: flex;
-        flex-direction: row;
+         flex-direction: column;
+         
     }
-    } */
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    } 
